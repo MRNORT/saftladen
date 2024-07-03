@@ -1,0 +1,71 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e3440; /* Nord background */
+    color: #eceff4; /* Nord text color */
+}
+
+header {
+    background-color: #5e81ac; /* Nord highlight color */
+    color: #eceff4;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow products to wrap */
+    justify-content: center; /* Center products horizontally */
+}
+
+.product-card {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* 33.33% width with some margin */
+    background-color: #2e3440; /* Nord background */
+    color: #eceff4; /* Nord text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #88c0d0; /* Nord cyan color */
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #2e3440; /* Nord background */
+    color: #eceff4; /* Nord text color */
+    text-align: center;
+    padding: 20px 0;
+}
